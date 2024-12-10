@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 
 const dbConnction =() =>{
-    mongoose.connect("mongodb://localhost:27017/Ecommerce_NTI")
+    //mongodb://localhost:27017/Ecommerce_NTI =>process.env.DB
+    mongoose.connect(process.env.DB!)
 .then(() => {
     
     console.log("connected to DB")
