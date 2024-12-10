@@ -1,8 +1,13 @@
 import {Router} from "express";
 
 import categoriesService from './categories.service';
+import subcategoriesRoute from "../subcategories/subcategories.route";
 const  categoriesRouter:Router =Router();
 
+// /api/v1/categories
+// /api/v1/subcategories
+// /api/v1/category/:categoryId/subcategories
+categoriesRouter.use('/:categoryId/subcategories',subcategoriesRoute)
 categoriesRouter.route ('/')
 .get(categoriesService.getAll)
 .post(categoriesService.createOne);
