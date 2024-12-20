@@ -4,13 +4,18 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon main.ts",
+<<<<<<< HEAD
     "start:prod": "NODE_ENV=production node ./dist/main.js",
+=======
+    "start:prod": "node ./dist/main.js",
+>>>>>>> 6b9d75262522fc7fce666bdd5bcef5b8af7f321c
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.1",
@@ -18,6 +23,11 @@
     "express-validator": "^7.2.0",
     "hpp": "^0.2.3",
     "i18n": "^0.15.1",
+=======
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
+>>>>>>> 6b9d75262522fc7fce666bdd5bcef5b8af7f321c
     "mongoose": "^8.8.3",
     "multer": "^1.4.5-lts.1",
     "params": "^0.1.1",
